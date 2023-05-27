@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parrafo A</title>
+</head>
+<body>
+    <script>
+      // Crear un elemento de texto
+var texto = document.createTextNode("Texto creado mediante el DOM.");
+
+// Crear un elemento de enlace
+var enlace = document.createElement("a");
+enlace.href = "https://www.google.com";
+enlace.textContent = "Visita Google";
+
+// Obtener el contenedor donde deseas agregar los elementos
+var contenedor = document.getElementById("miContenedor"); // Reemplaza "miContenedor" con el ID de tu contenedor
+
+// Agregar los elementos al contenedor
+contenedor.appendChild(texto);
+contenedor.appendChild(enlace);
+  
+        
+
+    </script>
+</body>
+</html>

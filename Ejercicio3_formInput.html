@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <style>
+        /* Estilos CSS iniciales */
+        #centro {
+          background-color: #0343aa;
+        }
+    
+        #abajo {
+          background-color: #00aaaa;
+        }
+      </style>
+    </head>
+    <body>
+      <form id="miFormulario">
+        <div id="miContenedor"></div>
+        <input type="email" placeholder="Ingrese su email">
+      </form>
+    
+      <div id="centro"></div>
+      <div id="abajo"></div>
+    
+      <script src="script.js"></script>
+    <script>
+        // Agregar un campo de entrada para el email al formulario
+var emailInput = document.createElement("input");
+emailInput.type = "email";
+emailInput.id = "emailInput";
+emailInput.placeholder = "Ingrese su email";
+
+var formulario = document.getElementById("miFormulario");
+formulario.appendChild(emailInput);
+
+// Agregar un párrafo con el título "Ingreso de datos" al div de centro
+var centroDiv = document.getElementById("centro");
+var tituloParrafo = document.createElement("p");
+tituloParrafo.textContent = "Ingreso de datos";
+centroDiv.appendChild(tituloParrafo);
+
+// Agregar el texto "Creado por Su Nombre - 2023" al div de abajo
+var abajoDiv = document.getElementById("abajo");
+var textoCreado = document.createTextNode("Creado por Su Nombre - 2023");
+abajoDiv.appendChild(textoCreado);
+
+// Cambiar los colores con el estilo mediante el DOM
+centroDiv.style.backgroundColor = "#ffefb3"; // Cambia el color de fondo del div centro
+abajoDiv.style.backgroundColor = "#ffd6cc"; // Cambia el color de fondo del div abajo
+
+        
+    </script>
+</body>
+</html>

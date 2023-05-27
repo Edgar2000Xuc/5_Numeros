@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 1 5 elementos</title>
+</head>
+<body>
+    <script>
+var numeros = [];
+for (var i = 0; i < 5; i++) {
+  var numero = parseInt(prompt("Ingrese un número:"));
+  numeros.push(numero);
+}
+
+// array con los 5 números
+var arrayOriginal = numeros.slice();
+
+//otro array con el doble de los números
+var arrayDoble = numeros.map(function(numero) {
+  return numero * 2;
+});
+
+// un array donde los números pares se vuelven cero
+var arrayParesCero = numeros.map(function(numero) {
+  if (numero % 2 === 0) {
+    return 0;
+  } else {
+    return numero;
+  }
+});
+
+// Mostrar los 4 arrays
+console.log("Array original:", arrayOriginal);
+console.log("Array con el doble de los números:", arrayDoble);
+console.log("Array donde los pares se vuelven cero:", arrayParesCero);
+console.log("Los 5 números ingresados:", numeros);
+
+    </script>
+</body>
+</html>
